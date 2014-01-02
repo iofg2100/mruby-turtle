@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/">
+        <file>contents/main.qml</file>
+        <file>contents/Block.qml</file>
+        <file>contents/CellSelector.qml</file>
+        <file>contents/CellPalette.qml</file>
+        <file>contents/Turtle.qml</file>
+        <file>contents/Cell.qml</file>
+        <file>contents/EditorCell.qml</file>
+        <file>contents/EditorField.qml</file>
+        <file>contents/EditorState.js</file>
+    </qresource>
+</RCC>

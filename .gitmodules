@@ -1,0 +1,3 @@
+[submodule "lib/Garnet"]
+	path = lib/Garnet
+	url = https://github.com/h2so5/Garnet.git

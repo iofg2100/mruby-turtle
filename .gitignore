@@ -1,0 +1,6 @@
+*.pro.user
+*.autosave
+*.swp
+*.swo
+*~
+*.pro.user.*
