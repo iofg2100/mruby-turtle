@@ -8,6 +8,5 @@
         <file>contents/Cell.qml</file>
         <file>contents/EditorCell.qml</file>
         <file>contents/EditorField.qml</file>
-        <file>contents/EditorState.js</file>
     </qresource>
 </RCC>

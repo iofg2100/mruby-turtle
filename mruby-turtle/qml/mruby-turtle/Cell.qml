@@ -7,13 +7,9 @@ Rectangle {
     property string type
     property Item item
     onTypeChanged: {
-
-        console.log(type)
-
         if (item) {
             item.destroy()
         }
-
         if (type !== "") {
             var c = Qt.createComponent(type + ".qml");
             item = c.createObject(cell);

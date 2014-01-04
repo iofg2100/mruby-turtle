@@ -1,6 +1,5 @@
 import QtQuick 2.2
 import QtQuick.Controls 1.1
-import "EditorState.js" as EditorState
 
 Item {
 
@@ -9,7 +8,7 @@ Item {
 
     property string type
     onTypeChanged: {
-        EditorState.type = type
+        editorViewModel.cellType = type
     }
 
     Column {
