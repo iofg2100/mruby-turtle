@@ -17,6 +17,9 @@ HEADERS += \
 
 CONFIG += c++11
 
+INCLUDEPATH += $${PWD}/../lib/Garnet/GarnetLib/include
+LIBS += -L$${PWD}/../lib/Garnet/GarnetLib/bin -lgarnet -lmruby
+
 # Installation path
 # target.path =
 

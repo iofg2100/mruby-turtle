@@ -4,10 +4,13 @@
 #include <QGuiApplication>
 #include <QQuickView>
 #include <QQmlContext>
+#include <QtQml>
+#include <Garnet/Engine>
 
 int main(int argc, char *argv[])
 {
     QGuiApplication app(argc, argv);
+    qmlRegisterType<Garnet::Engine>("Garnet", 1, 0, "Engine");
 
     QtQuick2ApplicationViewer viewer;
     auto context = viewer.rootContext();
