@@ -1,4 +1,5 @@
-import QtQuick 2.0
+import QtQuick 2.2
+import QtQuick.Layouts 1.1
 
 Rectangle {
     Column {
@@ -10,7 +11,17 @@ Rectangle {
             text: "Open"
             onClicked: fileLoadDialog.open()
         }
+        MenuButton {
+            text: "Play"
+            checked: mainViewModel.mode == "game"
+            onClicked: mainViewModel.mode = "game"
+        }
+        MenuButton {
+            text: "Edit"
+            checked: mainViewModel.mode == "editor"
+            onClicked: mainViewModel.mode = "editor"
+        }
     }
-    width: 96
-    height: 128
+    width: 64
+    height: 256
 }

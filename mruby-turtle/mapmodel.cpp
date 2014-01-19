@@ -90,5 +90,5 @@ void MapModel::save(const QUrl &fileUrl) const
 
 bool MapModel::validatePos(int x, int y) const
 {
-    return QRect(QPoint(), mSize).contains(x, y);
+    return 0 <= x && x < mSize.width() && 0 <= y && y < mSize.height();
 }
