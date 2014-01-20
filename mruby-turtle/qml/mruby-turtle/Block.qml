@@ -9,7 +9,7 @@ Item {
         height: 28
         radius: 4
 
-        color: Qt.lighter("#FF2C6F")
+        color: "#FF80A6"
         anchors.centerIn: parent
     }
 }

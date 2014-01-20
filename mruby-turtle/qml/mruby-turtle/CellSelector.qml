@@ -44,7 +44,7 @@ Item {
             verticalAlignment: Text.AlignVCenter
             font.family: "Helvetica Neue"
             font.weight: Font.Light
-            color: root.checked ? "red" : "black"
+            color: root.checked ? "#FF004C" : "black"
         }
     }
 

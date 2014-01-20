@@ -1,6 +1,6 @@
 import QtQuick 2.0
 
-Rectangle {
+Item {
 
     width: 64
     height: 32
@@ -8,6 +8,8 @@ Rectangle {
     signal clicked
     property string text
     property bool checked: mouseArea.pressed
+    property color color: "black"
+    property color activeColor: "#FF004C"
     MouseArea {
         id: mouseArea
         anchors.fill: parent
@@ -22,6 +24,6 @@ Rectangle {
         verticalAlignment: Text.AlignVCenter
         font.family: "Helvetica Neue"
         font.weight: Font.Light
-        color: root.checked ? "red" : "black"
+        color: root.checked ? root.activeColor : root.color
     }
 }

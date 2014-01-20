@@ -39,19 +39,6 @@ Rectangle {
         id: mainViewModel
     }
 
-    FileDialog {
-        id: fileLoadDialog
-        nameFilters: ["Json File (*.json)"]
-        onAccepted: editorViewModel.load(fileUrl)
-    }
-
-    FileDialog {
-        id: fileSaveDialog
-        selectExisting: false
-        nameFilters: ["Json File (*.json)"]
-        onAccepted: editorViewModel.save(fileUrl)
-    }
-
     state: mainViewModel.mode
     states: [
         State {

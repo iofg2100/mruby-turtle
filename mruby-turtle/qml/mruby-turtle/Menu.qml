@@ -5,11 +5,11 @@ Rectangle {
     Column {
         MenuButton {
             text: "Save"
-            onClicked: fileSaveDialog.open()
+            onClicked: editorPane.save()
         }
         MenuButton {
             text: "Open"
-            onClicked: fileLoadDialog.open()
+            onClicked: editorPane.load()
         }
         MenuButton {
             text: "Play"

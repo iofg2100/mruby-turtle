@@ -7,7 +7,7 @@ Item {
         width: 24
         height: 24
         radius: 12
-        color: "#FF2C6F"
+        color: "#FF004C"
         anchors.centerIn: parent
     }
 }

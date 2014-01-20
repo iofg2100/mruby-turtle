@@ -3,9 +3,11 @@ import QtQuick 2.0
 QtObject {
     property int column
     property int row
+    property int lastDir: 0
 
     // 0:right 1:bottom 2:left 3:top
     function move(direction) {
+        direction %= 4
         var moveTo = function(dx, dy) {
             var nextX = column + dx
             var nextY = row + dy
@@ -31,6 +33,7 @@ QtObject {
         var dx = -(direction - 1) % 2
         var dy = -(direction - 2) % 2
         moveTo(dx, dy)
+        lastDir = direction
     }
 
     function feel(direction) {

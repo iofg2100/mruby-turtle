@@ -9,6 +9,16 @@ Rectangle {
     Column {
         anchors.fill: parent
         spacing: 16
+
+        TextArea {
+            id: textArea
+            width: 256
+            height: 160
+            font.family: "Source Code Pro"
+            font.weight: Font.Bold
+            font.pointSize: 10
+            text: "# insert code"
+        }
         Text {
             id: error
             width: 256
@@ -17,13 +27,6 @@ Rectangle {
             font.pointSize: 9
             wrapMode: Text.Wrap
             color: "#f00"
-        }
-        TextArea {
-            id: textArea
-            width: 256
-            height: 160
-            font.family: "Source Code Pro"
-            text: "# insert code"
         }
         Row {
             MenuButton {
