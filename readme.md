@@ -2,6 +2,9 @@
 mruby-turtle
 ================
 
+What is mruby-turtle?
+----------------
+
 Command the turtle in mruby
 
 Maps are saved in JSON format
@@ -22,3 +25,11 @@ else
   end
 end
 ```
+
+Powered by
+----------------
+
+* Qt Quick
+* mruby
+* [Garnet](https://github.com/h2so5/Garnet), mruby bindings for Qt objects
+
